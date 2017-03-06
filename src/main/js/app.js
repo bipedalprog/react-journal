@@ -3,8 +3,8 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import AppBar from 'material-ui/AppBar';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import AppFrame from './AppFrame';
 
 class App extends React.Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class App extends React.Component {
     render() {
         return (
             <MuiThemeProvider>
-                <AppBar title="Bipedal Journal" />
+                <AppFrame/>
             </MuiThemeProvider>
         )
     }
